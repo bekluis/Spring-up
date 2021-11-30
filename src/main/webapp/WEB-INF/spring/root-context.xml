@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	<!-- 원래는 여기에 작성하지 않음
+		 실제로는 데이타베이스에서 값을 가져와서 사용함 -->
+	<bean id='memberVO' class="com.javaclass.model.MemberVO">
+		<property name="id" value='0001'/> <!-- setId() --> <!-- setId 함수를 불러오겠구나 -->
+		<property name="name" value='홍길동'/>
+		<property name="age" value='20'/>
+	</bean>
+</beans>
